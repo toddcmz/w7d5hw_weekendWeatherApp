@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navHeader opaqueMe">
+        <h2 id="titleText">Weather | </h2>
+        <div class="searchContainer">
+            <input class="softenEdges" type="text" name="citySearchField" id="citySearchField" placeholder="City Name">
+            <select name="chooseUnits" id="chooseUnits">
+                <option value="imperial">Farenheit / MPH</option>
+                <option value="metric">Celsius / MPS</option>
+            </select>
+            <button id="searchButton">Search</button>
+        </div>
+    </div>
+
+    <div class="mainContainer">
+        <div class="overallWeatherContainer opaqueMe softenEdges">
+            <h2>Today's Weather</h2>
+        </div>
+        <div class="mainSubContainer">
+            <div class="twoTempContainers">
+            <div class="tempContainer opaqueMe softenEdges nowStatsBox">
+                <h3>Temperature</h3>
+            </div>
+            <div class="feelsLikeContainer opaqueMe softenEdges nowStatsBox">
+                <h3>Feels Like</h3>
+            </div>
+        </div>
+            <div class="humidWindContainer">
+                <div class="humidityStatContainer opaqueMe softenEdges nowStatsBox">
+                    <h3>Humidity</h3>
+                </div>
+                <div class="windSpeedStatContainer opaqueMe softenEdges nowStatsBox">
+                    <h3>Wind Speed</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="forecastContainer opaqueMe softenEdges">
+        <h2>Four-Day Forecast</h2>
+        <div class="forecastDaysContainer">
+            <div id="day1Box" class="forecastBox"></div>
+            <div id="day2Box" class="forecastBox"></div>
+            <div id="day3Box" class="forecastBox"></div>
+            <div id="day4Box" class="forecastBox"></div>
+        </div>
+    </div>
+
+    <script src="./js/secret.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
